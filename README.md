@@ -2,7 +2,11 @@
 
 A JQuery Plugin for Tree View with Lazy loading capability
 
+# Demo
   
+  Click on the below demo link to navigate to the simple basic demo of Tree View
+  
+  <a href="https://vsvvssrao.github.io/TreeView/">demo</a>
 
 # USAGE
 
