@@ -1,11 +1,17 @@
+/*!
+ * jQuery based plugin - Tree View
+ * Author : vsvvssrao (https://github.com/vsvvssrao)
+ * Demo link : https://vsvvssrao.github.io/TreeView/
+ * Date: Sat Oct 26 2019
+ */
 (function ($) {
   $.fn.tree = function (options) {
     var settings = $.extend({
-      data: [],
+      data: function () { },
       onDemandData: function () { }
     }, options);
     function GetData() {
-      return settings.data;
+      return settings.data();
     }
     var _data = GetData();
     function createTree(data, ulClassName) {
@@ -43,8 +49,6 @@
       $this.toggleClass("tv-caret-down");
 
     })
-
-
     return this;
   };
 }(jQuery));

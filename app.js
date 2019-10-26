@@ -82,7 +82,9 @@ var Treedata = {
 };
 
 $('#myListTree').tree({
-    data: Treedata.result,
+    data: function(){
+        return Treedata.result
+    },
     onDemandData: function () {
         return Treedata.result
     }
